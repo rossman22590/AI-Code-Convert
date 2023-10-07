@@ -19,12 +19,8 @@ export const CodeBlock: FC<Props> = ({
   const [copyText, setCopyText] = useState<string>('Copy');
 
   const handleDownload = () => {
-      const blob = new Blob([code], { type: 'text/plain;charset=utf-8' });
-      saveAs(blob, `code.md`);
-  };
-  
-  const handleCoffee = () => {
-	  window.open("https://ko-fi.com/audi_guzz");
+    const blob = new Blob([code], { type: 'text/plain;charset=utf-8' });
+    saveAs(blob, `code.md`);
   };
 
   useEffect(() => {
@@ -48,7 +44,7 @@ export const CodeBlock: FC<Props> = ({
       </button>
 
       <CodeMirror
-		className="text-base"
+        className="text-base"
         editable={editable}
         value={code}
         minHeight="640px"
@@ -58,12 +54,9 @@ export const CodeBlock: FC<Props> = ({
 		indentWithTab={true}
         onChange={(value) => onChange(value)}
       />
-	<button
-		className="absolute right-0 bottom-[-4] z-10 rounded p-1 text-sm text-white"
-		onClick={handleDownload}>Download Code</button>
-	<button
-		className="absolute left-0 bottom-[-4] z-10 p-1 text-sm font-bold text-yellow-400"
-		onClick={handleCoffee}>Buy Me a Coffee</button>
+      <button
+        className="absolute right-0 bottom-[-4] z-10 rounded p-1 text-sm text-white"
+        onClick={handleDownload}>Download Code</button>
     </div>
   );
 };
