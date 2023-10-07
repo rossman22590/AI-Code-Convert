@@ -140,13 +140,13 @@ export default function Home() {
 	              <path fill="#3b82f6" d="M516 673c0 4.4 3.4 8 7.5 8h185c4.1 0 7.5-3.6 7.5-8v-48c0-4.4-3.4-8-7.5-8h-185c-4.1 0-7.5 3.6-7.5 8v48zm-194.9 6.1l192-161c3.8-3.2 3.8-9.1 0-12.3l-192-160.9A7.95 7.95 0 0 0 308 351v62.7c0 2.4 1 4.6 2.9 6.1L420.7 512l-109.8 92.2a8.1 8.1 0 0 0-2.9 6.1V673c0 6.8 7.9 10.5 13.1 6.1zM880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"/>
 	          </svg>
 	          <h1 className="text-white font-bold text-2xl ml-1">
-	              <a href="https://aicodeconvert.com">AICodeConvert.com</a>
+	              <a href="https://aicodeconvert.com">AI Tutor Code</a>
 	          </h1>
 	      </div>
 	      <div className="flex items-center hidden md:block lg:block">
-			  <a href="https://blog.aicodeconvert.com" className="text-blue-500 text font-semibold mr-1 md:mr-4 lg:mr-4">Blog</a>
-	          <a href="#about" className="text-white text font-semibold mr-1 md:mr-4 lg:mr-4">About Us</a>
-	          <a href="#contact" className="text-white text font-semibold mr-1 md:mr-4 lg:mr-4">Contact</a>
+			  <a href="https://account.myapps.ai/settings/profile" className="text-blue-500 text font-semibold mr-1 md:mr-4 lg:mr-4">My Account</a>
+	          <a href="https://account.myapps.ai/premium" className="text-white text font-semibold mr-1 md:mr-4 lg:mr-4">Premium Apps</a>
+	          <a href="https://account.myapps.ai/dashboard" className="text-white text font-semibold mr-1 md:mr-4 lg:mr-4">Dashboard</a>
 	      </div>
 	  </div>
 	  <div className="flex flex-col items-center justify-center bg-[#0E1117] text-white">
@@ -263,11 +263,7 @@ export default function Home() {
 		  >
 		    {loading && userExplain ? 'Loading' : 'Explain'}
 		  </button>
-		  <a href="https://www.producthunt.com/products/aicodeconvert#aicodeconvert" target="_blank">
-		  	<img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=540327&theme=light" 
-		  		alt="AICodeConvert - Generate&#0032;Code&#0032;or&#0032;Natural&#0032;Language&#0032;To&#0032;Another&#0032;Language&#0032;Code | Product Hunt" 
-		  		width="200" height="45" />
-		  </a>
+		 
 		</div>
 	  </div>
 	  <div className="pl-6 pr-6 mt-1 md:pl-20 md:pr-20 bg-[#0E1117]">
@@ -282,40 +278,13 @@ export default function Home() {
 			<li className="mb-2">Your Best AI Code Helper.</li>
 		  </ul>
 		</div>
-		<div id="contact" className="text-white pt-4">
-		  <div className="text-2xl">Contact</div>
-		  <div className="flex justify-start items-center mb-2 space-y-2 mt-2 flex-wrap">
-			<a href="https://ko-fi.com/audi_guzz" className="px-2 bg-[#f6db4b] cursor-pointer rounded-full mr-4 py-1">
-				<div className="flex justify-center items-center">
-					<p className="ml-2 mr-2 text-black font-bold">Buy me a Coffee</p>
-					<svg width="30" height="30" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-					    <path fill="#ffffff" d="M208 80H32a8 8 0 0 0-8 8v48a96.3 96.3 0 0 0 32.54 72H32a8 8 0 0 0 0 16h176a8 8 0 0 0 0-16h-24.54a96.59 96.59 0 0 0 27-40.09A40 40 0 0 0 248 128v-8a40 40 0 0 0-40-40Zm24 48a24 24 0 0 1-17.2 23a95.78 95.78 0 0 0 1.2-15V97.38A24 24 0 0 1 232 120ZM112 56V24a8 8 0 0 1 16 0v32a8 8 0 0 1-16 0Zm32 0V24a8 8 0 0 1 16 0v32a8 8 0 0 1-16 0Zm-64 0V24a8 8 0 0 1 16 0v32a8 8 0 0 1-16 0Z"/>
-					</svg>
-				</div>
-			</a>
-		  	<a href="https://twitter.com/AUDI_GUZZ" className="text-gray cursor-pointer mr-4">
-		  		<svg width="26" height="26" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-		  		    <path fill="#ffffff" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645c0 138.72-105.583 298.558-298.558 298.558c-59.452 0-114.68-17.219-161.137-47.106c8.447.974 16.568 1.299 25.34 1.299c49.055 0 94.213-16.568 130.274-44.832c-46.132-.975-84.792-31.188-98.112-72.772c6.498.974 12.995 1.624 19.818 1.624c9.421 0 18.843-1.3 27.614-3.573c-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319c-28.264-18.843-46.781-51.005-46.781-87.391c0-19.492 5.197-37.36 14.294-52.954c51.655 63.675 129.3 105.258 216.365 109.807c-1.624-7.797-2.599-15.918-2.599-24.04c0-57.828 46.782-104.934 104.934-104.934c30.213 0 57.502 12.67 76.67 33.137c23.715-4.548 46.456-13.32 66.599-25.34c-7.798 24.366-24.366 44.833-46.132 57.827c21.117-2.273 41.584-8.122 60.426-16.243c-14.292 20.791-32.161 39.308-52.628 54.253z"/>
-		  		</svg>
-		  	</a>
-			<a href="https://www.producthunt.com/products/aicodeconvert#aicodeconvert" target="_blank">
-				<img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=540327&theme=light" 
-					alt="AICodeConvert - Generate&#0032;Code&#0032;or&#0032;Natural&#0032;Language&#0032;To&#0032;Another&#0032;Language&#0032;Code | Product Hunt" 
-					width="200" height="45" />
-			</a>
-		  </div>
-		  <div>
-			Mail: enqueueit@gmail.com
-		  </div>
-		</div>
+
+
 	  </div>
 	  <div className="bg-[#0E1117] text-center text-white text-sm pt-10">
-	  	AI Code Convert Copyright © <span className="text-blue-500">aicodeconvert.com</span>
+	  	AI Tutor Copyright © <span className="text-blue-500">https://myapps.ai</span>
 	  </div>
-	  <div className="bg-[#0E1117] pt-1 pb-1 text-center text-white text-sm">
-		<a href="https://ailandingpagegenerator.com">AI Landing Page Generator</a> | <a href="https://base64.kr">Base64.kr</a> | <a href="https://aicomicfactory.com">AI Comic Factory </a> 
-		| <a href="https://illusiondiffusion.net"> Illusion Diffusion</a> | <a href="https://aicoderhelper.com">AI Coder Helper</a>
-	  </div>
+
     </>
   );
 }
